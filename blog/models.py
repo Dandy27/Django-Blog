@@ -9,7 +9,7 @@ class Post(models.Model):
     )
 
     titulo = models.CharField(max_length=250)
-    alug = models.SlugField(max_length=250)
+    slug = models.SlugField(max_length=250)
     autor = models.ForeignKey(User, on_delete=models.CASCADE)
     
     conteudo = models.TextField()
